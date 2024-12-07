@@ -121,8 +121,5 @@
 > ## 📜 License
 > This project is licensed under the MIT License.
 > 
-> ## Contribute
-> We ❤️ contributions! Open an issue or create a PR to suggest new features or fixes.
-> 
 > ## 🎉 Special Thanks
 > Big shoutout to the open-source community and libraries that made this project possible! 💙
