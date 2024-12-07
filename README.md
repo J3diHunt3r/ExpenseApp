@@ -1,4 +1,4 @@
-> # 🌀 Bun React Tailwind ShadCN Laravel Data Compare App
+> # 🌀 Bun React TanStack Tailwind ShadCN Laravel Data Compare App
 > Revolutionizing data comparison with a seamless and responsive web app that turns cumbersome Excel workflows into lightning-fast digital magic! 🚀
 
 > ## ✨ Features
