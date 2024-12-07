@@ -1,6 +1,6 @@
 > # 🌀 Bun React Tailwind ShadCN Laravel Data Compare App
 > Revolutionizing data comparison with a seamless and responsive web app that turns cumbersome Excel workflows into lightning-fast digital magic! 🚀
-> 
+
 > ## ✨ Features
 > 
 > ### Frontend Powered by:
@@ -8,6 +8,13 @@
 > - **React**: A dynamic and modular UI for a superb user experience.
 > - **TailwindCSS**: Utility-first CSS for rapid UI design and responsiveness.
 > - **ShadCN**: Streamlined component library for beautiful and accessible designs.
+> - **TypeScript**: Ensures strong typing for safer and more maintainable code.
+> - **Zod**: Frontend validation library for ensuring the integrity and correctness of form data before submission.
+> - **TanStack**:
+>    - **Queries**: Powerful and flexible data-fetching with automatic caching, pagination, and background refetching.
+>    - **Routes**: Efficient and modular routing system that improves navigation.
+>    - **Forms**: Form management with powerful state handling and validation support.
+>    - **Tables**: Dynamic and interactive tables for displaying data with sorting, filtering, and pagination features.
 > 
 > ### Backend Magic:
 > - **PHP Laravel**: Provides a robust and scalable backend API to handle file uploads, processing, and data comparison logic.
@@ -31,21 +38,21 @@
 > - **PWA Integration**:
 >     - Install the app directly on your device for offline access.
 >     - Fully responsive and super-fast, with cached images and data for offline use.
-> 
+
 > ## 🚀 Installation
-> 
+
 > ### 1. Clone the Repo
 > ```bash
 > git clone https://github.com/your-username/your-repo-name.git  
 > cd your-repo-name  
 > ```
-> 
+
 > ### 2. Frontend Setup
 > ```bash
 > bun install  
 > bun dev  
 > ```
-> 
+
 > ### 3. Backend Setup
 > Ensure you have PHP and Composer installed.
 > ```bash
@@ -54,16 +61,16 @@
 > php artisan migrate  
 > php artisan serve  
 > ```
-> 
+
 > ### 4. Environment Configuration
 > Create a `.env` file in both the frontend and backend directories and populate the following variables:
-> 
+
 > #### Frontend `.env`
 > ```env
 > REACT_APP_API_URL=http://localhost:8000/api  
 > REACT_APP_PWA_CACHE_VERSION=1.0.0  
 > ```
-> 
+
 > #### Backend `.env`
 > ```env
 > DB_CONNECTION=mysql  
@@ -73,13 +80,13 @@
 > DB_USERNAME=your_database_user  
 > DB_PASSWORD=your_database_password  
 > ```
-> 
+
 > ## 🛠️ Usage
 > - Visit the app at [http://localhost:3000](http://localhost:3000).
 > - Upload your CSV files for instant data comparison.
 > - View data insights through interactive tables and stunning charts.
 > - Save your results as PDF or access them offline via the PWA app.
-> 
+ 
 > ## 📂 Project Structure
 > ```plaintext
 > ├── frontend/  
@@ -96,30 +103,34 @@
 > ├── README.md                  # You’re here!  
 > └── .env.example               # Sample environment configuration  
 > ```
-> 
+
 > ## 💻 Technologies Used
-> | Technology  | Purpose |
-> |-------------|---------|
-> | Bun         | Fast build tool and package manager |
-> | React       | Frontend framework for dynamic UIs |
-> | TailwindCSS | Responsive and utility-first styling |
-> | ShadCN      | Accessible and customizable UI components |
-> | Laravel     | Backend API and data processing |
-> | Chart.js    | Data visualization for interactive charts |
+>| Technology  | Purpose |
+>|-------------|---------|
+>| **Bun**     | Fast build tool and package manager |
+>| **React**   | Frontend framework for dynamic UIs |
+>| **TailwindCSS** | Responsive and utility-first styling |
+>| **ShadCN**  | Accessible and customizable UI components |
+>| **Laravel** | Backend API and data processing |
+>| **Chart.js** | Data visualization for interactive charts |
+>| **TypeScript** | Static typing for better development experience |
+>| **Zod**     | Schema validation for frontend form data |
+>| **TanStack**| Advanced data handling with queries, forms, tables, and routing |
+
 > 
 > ## 📈 Performance and Offline Support
 > - **PWA-ready**: Install the app and use it offline.
 > - **Caching**: All images and data are cached locally for a fast, smooth experience.
 > - **Optimized**: Uses Bun for blazing-fast build times and efficient rendering.
-> 
+
 > ## 🚧 Roadmap
 > - Add support for Excel uploads.
 > - Multi-language support.
 > - Advanced charting options with drill-down capabilities.
 > - User accounts and authentication for saving reports.
-> 
+
 > ## 📜 License
 > This project is licensed under the MIT License.
-> 
+
 > ## 🎉 Special Thanks
 > Big shoutout to the open-source community and libraries that made this project possible! 💙
