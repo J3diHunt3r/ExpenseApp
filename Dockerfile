@@ -1,5 +1,6 @@
 # syntax = docker/dockerfile:1
 
+# Adjust BUN_VERSION as desired
 ARG BUN_VERSION=1.1.24
 FROM oven/bun:${BUN_VERSION}-slim as base
 
@@ -10,6 +11,7 @@ WORKDIR /app
 
 # Set production environment
 ENV NODE_ENV="production"
+
 
 # Throw-away build stage to reduce size of final image
 FROM base as build
@@ -25,11 +27,6 @@ RUN bun install --ci
 # Copy application code
 COPY . .
 
-# Build frontend if necessary
-RUN bun build # Add this step if you're using Bun for building the frontend
-
-# Copy the dist directory after building
-COPY ./frontend/dist /app/frontend/dist
 
 # Final stage for app image
 FROM base
