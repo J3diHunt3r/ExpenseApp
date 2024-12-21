@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for expenseapp on 2024-12-21T15:10:09Z
+# fly.toml app configuration file generated for stackapp on 2024-12-21T16:09:43Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'expenseapp'
+app = 'stackapp'
 primary_region = 'jnb'
 
 [build]
