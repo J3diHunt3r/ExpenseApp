@@ -1,16 +1,7 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import { createFileRoute } from "@tanstack/react-router";
 import ChatBotIntegration from "./ChatBotIntegration";
-import CsvUploadTable from "@/components/CsvUploadTableComponent";
 
 // Import the CSV upload table component
 
@@ -28,7 +19,7 @@ async function getTotalSpent() {
 }
 
 function Index() {
-  const { isPending, error, data } = useQuery({
+  const { error } = useQuery({
     queryKey: ["get-total-spent"],
     queryFn: getTotalSpent,
   });
