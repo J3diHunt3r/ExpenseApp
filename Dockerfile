@@ -27,11 +27,14 @@ RUN bun install --ci
 # Copy application code
 COPY . .
 
+# Copy frontend dist (make sure it's included in your project structure)
+COPY ./frontend/dist /app/frontend/dist
+
 
 # Final stage for app image
 FROM base
 
-# Copy built application
+# Copy built application and frontend dist
 COPY --from=build /app /app
 
 # Start the server by default, this can be overwritten at runtime
